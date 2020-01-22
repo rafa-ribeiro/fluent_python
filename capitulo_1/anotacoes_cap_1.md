@@ -8,11 +8,13 @@
 
 3. Implementar o método especial __getitem__ faz com que eu possa aplicar slicing:
 Pega as 3 primeiras cartas do baralho
+
 <code> 
     deck[:3]		
 </code>
 
 Pega a no indice 12 e avança de 13 em 13 até o final do baralho
+
 <code>
     deck[12::13]
 </code>
