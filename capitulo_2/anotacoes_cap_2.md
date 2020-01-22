@@ -1,3 +1,6 @@
+### Capítulo 2 - Uma coleção de sequências 
+
+
 15. São sequências container -> list, tuple e collections.deque -> podem armazenar itens de tipos diferentes.
 -- Sequências container armazenam em sí as REFERÊNCIAS aos objetos, por isso podem apontar para tipos distintos
 
