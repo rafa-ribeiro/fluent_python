@@ -5,7 +5,7 @@
 -- Sequências container armazenam em sí as REFERÊNCIAS aos objetos, por isso podem apontar para tipos distintos
 
 
-16. str, bytes, bytearray, memoryview e array.array -> São sequẽncias simples -> armazenam itens de um único tipo.
+16. str, bytes, bytearray, memoryview e array.array -> São sequências simples -> armazenam itens de um único tipo.
 --- Sequências simples armazenam fisicamente o valor de cada item em seu próprio espaço de memória.
 
 
@@ -42,7 +42,11 @@ economiza memória, pois ela gera itens um por um usando o protocolo de iterador
 somente para alimentar outro construtor.
 
 
-27. listcomps são delimitadas por colchetes -> [x for x in 'abc']
+27. listcomps são delimitadas por colchetes: 
+
+<code>
+    [x for x in 'abc']
+</code>
 
 
 28. genexps são delimitadas por parênteses -> tuple(ord(symbol) for symbol in symbols)
@@ -189,4 +193,18 @@ e estatísticas.
 64. from time import perf_counter as pc -> Timer de medição de desempenho de alta resolução (desde Python 3.3)
 
 
-65. CONTINUAR do texto Deques e outras filas
+65. collections.deque é uma fila dupla thread-safe, criada para proporcionar inserção e remoção rápidas de ambas as 
+extremidades
+
+
+66. collections.deque é uma boa opção quando se quer utilizar, por exemplo, uma lista dos "últimos itens vistos", pois
+o deque pode ser de tamanho limitado e, quando cheio, ao inserir novos itens, os itens da extremidade oposta serão 
+descartados.
+
+
+67. collections.deque não são indicados para os casos em que se precisar adicionar/remover elementos no/do meio de uma
+sequência, as operações são mais custosas.
+
+
+68. O algoritmo de ordenação usado em sorted e em list.sort é o Timsort, um algoritmo adaptativo que alterna entre
+as estratégias de insertion sort e merge sort, de acordo com o grau de ordenação dos dados.
