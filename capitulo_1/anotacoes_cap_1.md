@@ -1,4 +1,4 @@
-Capítulo 1 - Modelo de dados do Python
+### Capítulo 1 - Modelo de dados do Python
 
 1. Métodos especiais como, por exemplo, __getitem__, __str__, podem ser chamados de métodos dunder (dunder methods).
 
@@ -7,9 +7,15 @@ Capítulo 1 - Modelo de dados do Python
 
 
 3. Implementar o método especial __getitem__ faz com que eu possa aplicar slicing:
-deck[:3]		->		Pega as 3 primeiras cartas do baralho
+Pega as 3 primeiras cartas do baralho
+<code> 
+    deck[:3]		
+</code>
 
-deck[12::13]	->		Pega a no indice 12 e avança de 13 em 13 até o final do baralho
+Pega a no indice 12 e avança de 13 em 13 até o final do baralho
+<code>
+    deck[12::13]
+</code>
 
 
 4. Implementar o mesmo __getitem__ faz com que a classe seja iterável. Inclusive iterando reversamente com o comando reversed(deck).
