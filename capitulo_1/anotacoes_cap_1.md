@@ -7,6 +7,7 @@
 
 
 3. Implementar o método especial __getitem__ faz com que eu possa aplicar slicing:
+
 Pega as 3 primeiras cartas do baralho
 
 <code> 
