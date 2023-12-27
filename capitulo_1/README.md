@@ -10,21 +10,21 @@
 
 Pega as 3 primeiras cartas do baralho
 
-<code> 
+```python 
     deck[:3]		
-</code>
+```
 
-Pega a no indice 12 e avança de 13 em 13 até o final do baralho
+Pega a partir do indice 12 e avança de 13 em 13 até o final do baralho
 
-<code>
+```python
     deck[12::13]
-</code>
+```
 
 
 4. Implementar o mesmo __getitem__ faz com que a classe seja iterável. Inclusive iterando reversamente com o comando reversed(deck).
 
 
-5. A nossa classe FrenchDeck apesar de não implementar o método contains, funciona com o método in por ser uma classe iterável, dessa forma ao usarmos o in, o interpretado fará uma varredura sequencial nos cards da nossa classe.
+5. A nossa classe FrenchDeck apesar de não implementar o método contains, funciona com o método in por ser uma classe iterável, dessa forma ao usarmos o in, o interpretador fará uma varredura sequencial nos cards da nossa classe.
 
 
 6. Métodos especiais são criados para serem chamados pelo interpretador e NÃO por você. Fazemos len(collection) ao invés de collection.__len__()
@@ -32,7 +32,7 @@ Pega a no indice 12 e avança de 13 em 13 até o final do baralho
 
 7. Para os tipos de dados embutidos, os built-in é mais rápido chamar os métodos que referenciam os métodos especiais do que chamá-los diretamente.
 
--- Exemplo: Chamar o len é mais rápido que chamar o __len__() para tipos de dados como str ou list. Isso porque eles podem estar implementados de forma com que o tamanho já esteja contabilizado e associado na memória e não criando a necessidade de efetuar qualquer iteração.
+-- Exemplo: Chamar o len é mais rápido que chamar o __len__() para tipos de dados como str ou list. Isso porque eles podem estar implementados de forma com que o tamanho já esteja contabilizado e associado na memória e não tendo a necessidade de efetuar qualquer iteração.
 
 
 8. __repr__ -> Representação em string -> built-in function = repr(obj)
